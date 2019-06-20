@@ -36,7 +36,7 @@ import java.util.Stack;
  * @author <a href="mailto:hboutemy@apache.org">Herve Boutemy</a>
  * @version $Id$
  */
-public class ComparableVersion
+public class Version
     implements Comparable
 {
     private String value;
@@ -317,7 +317,7 @@ public class ComparableVersion
         }
     }
 
-    public ComparableVersion( String version )
+    public Version(String version )
     {
         parseVersion( version );
     }
@@ -424,7 +424,7 @@ public class ComparableVersion
 
     public int compareTo( Object o )
     {
-        return items.compareTo( ( (ComparableVersion) o ).items );
+        return items.compareTo( ( (Version) o ).items );
     }
 
     public String toString()
@@ -434,7 +434,7 @@ public class ComparableVersion
 
     public boolean equals( Object o )
     {
-        return ( o instanceof ComparableVersion ) && canonical.equals( ( ( ComparableVersion )o ).canonical );
+        return ( o instanceof Version) && canonical.equals( ( (Version)o ).canonical );
     }
 
     public int hashCode()
