@@ -34,6 +34,7 @@ import java.util.Stack;
  *
  * @author <a href="mailto:kenney@apache.org">Kenney Westerhof</a>
  * @author <a href="mailto:hboutemy@apache.org">Herve Boutemy</a>
+ * @author <a href="https://github.com/Mouse0w0">Mouse0w0</a> (modify)
  * @version $Id$
  */
 public class Version
