@@ -23,10 +23,11 @@ package com.github.mouse0w0.version;
  * Occurs when a version is invalid.
  *
  * @author <a href="mailto:brett@apache.org">Brett Porter</a>
+ * @author <a href="https://github.com/Mouse0w0">Mouse0w0</a> (modify)
  * @version $Id$
  */
 public class InvalidVersionSpecificationException
-    extends Exception
+    extends RuntimeException
 {
     public InvalidVersionSpecificationException( String message )
     {
